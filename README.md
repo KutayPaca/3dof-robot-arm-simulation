@@ -102,6 +102,17 @@ Profile = ContextProfile.Compatability  // Legacy OpenGL desteği
 Flags = ContextFlags.Default
 ```
 
+### 🔧 Neden OpenTK 4.8.2?
+Bu proje **OpenTK 4.8.2** kullanır çünkü:
+- ✅ .NET 6.0 ile tam uyumlu en güncel kararlı sürüm (Kasım 2023)
+- ✅ Legacy OpenGL (`GL.Begin/End`, `GL.Vertex3`, vb.) tam desteği
+- ✅ 130M+ indirme ile en popüler C# OpenGL wrapper'ı
+- ✅ `Matrix4`, `Vector3` gibi matematik yapıları optimize edilmiş
+- ✅ `ContextProfile.Compatability` ile eski ve yeni OpenGL birlikte kullanılabilir
+- ✅ Aktif topluluk desteği ve düzenli bug düzeltmeleri
+
+**Not:** OpenTK 5.x henüz preview/alpha aşamasında ve üretim için önerilmez. OpenTK 3.x ise .NET 6.0 ile tam uyumlu değildir.
+
 ## 📦 Gereksinimler
 
 - **.NET 6.0 SDK** veya üzeri (test edildi: 6.0.428)
